@@ -1,0 +1,272 @@
+html,body
+{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    color: white;
+}
+h1
+{
+    margin:0;
+   
+}
+.hidden
+{
+    display:none;
+}
+/*header*/
+.navbar
+{
+    margin: 0;
+    z-index:100;
+    width:100%;
+    position: absolute;
+}
+.navbar-header
+{
+    
+}
+/*main body*/
+.body
+{
+    width:100%;
+    height:100%;
+}
+.heroImage
+{
+    width:100%;
+    height: 100%;
+    background-image: url("../images/collage.png");
+    background-size:100% 100%;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.8);
+    text-align:center;
+    
+}
+.heroImage h1
+{
+    position:absolute;
+    width:100%;
+    top: 30%;
+    font-size: 75px;
+    font-family: 'Lobster', cursive;
+    z-index:1;
+    
+}
+.heroImage #balloons
+{
+    position:absolute;
+    top:10%;
+    z-index: 0;
+}
+img
+{
+    width:100%;
+    height:100%;
+    z-index: 0;
+}
+.giftBtn
+{
+    position:absolute;
+    top: 80%;
+    font-size: 30px;
+    right: 10%;
+    left:10%;
+    border-radius: 30px;
+    color: white;
+  background: #E31576;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left top, #E31576, #ed3f91, #E31576);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left top, #E31576, #ed3f91, #E31576);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.giftBtn:hover
+{
+    background: #E31576;
+    color:white;
+}
+.gifContainer
+{
+    
+    width:100%;
+    height:100%;
+    margin: 50px auto;
+    background-image: url("../images/frame.jpg");
+    background-size: 100% 100%;
+    background-blend-mode: overlay;
+    background-color:rgba(0,0,0,0.5);
+    text-align:center;
+}
+.gifContainer img
+{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 0 8px white;
+    box-shadow: inset 0 0 8px white;
+    width: auto;
+    height:250px;
+    margin-top: 230px;
+    z-index:0;
+    
+}
+p.caption
+{
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+    width:60%;
+    z-index:0;
+    margin: 10px auto;
+}
+.popup
+{
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 300px;
+    background-image:url("../images/popup.jpg");
+    background-size: 100% 100%;
+    font-size: 20px;
+    color: white;
+    display:none;
+    padding: 200px 0px;
+    text-align: center;
+}
+
+#popupBtn
+{
+    margin-bottom: 50px;
+}
+
+#wishes
+{
+    position:absolute;
+    top:50px;
+    z-index:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:none;
+    font-size:30px;
+    font-family: 'Lobster', cursive;
+    color:white;
+    background-image: url("../images/wishes.png");
+    background-size: 100% 100%;
+    padding: 30px;
+}
+#wishes ol
+{
+    margin-top: 30px;
+}
+
+
+@keyframes caretMoving
+{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+#wishes .caretBox 
+{
+    text-align: center;
+    margin: 60px;
+    
+    
+}
+
+.caretBox i
+{
+    animation: caretMoving 1s infinite;
+}
+.caretBox button
+{
+    
+    background-color: green;
+}
+
+.wishList
+{
+    position:absolute;
+    top:50px;
+    display:none;
+    height:100%;
+}
+.wishContainer
+{
+    text-align:center;
+    height:100%;
+    background-color: white;
+    color:saddlebrown;
+    font-family: 'Lobster', cursive;
+}
+.wishContainer h1
+{
+    margin-top:15px;
+}
+.wishContainer img
+{
+    height:80%;
+}
+
+#final 
+{
+    position: absolute;
+    color: black;
+    top:50px;
+    height:100%;
+    display:none;
+}
+
+#final img
+{
+    width:100%;
+    height:100%;
+}
+
+.bonusPopup
+{
+    position:absolute;
+    top: 50px;
+    background-color: white;
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+.bonusPopup img
+{
+    width:70%;
+    height:70%;
+    margin: 0 auto;
+}
+.bonusPopup button
+{
+    display: block;
+    margin: 30px auto;
+    font-size:20px;
+    border-radius: 25%;
+    background-color: #fbbf19;
+    animation: font 2s infinite;
+}
+
+@keyframes font
+{
+    0%{
+        font-size: 20px;
+    }
+    50%{
+        font-size: 25px;
+    }
+    75%{
+        font-size: 30px;
+    }
+    100%{
+        font-size: 25px;
+    }
+}

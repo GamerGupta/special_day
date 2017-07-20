@@ -206,12 +206,12 @@ p.caption
     color:saddlebrown;
     font-family: 'Lobster', cursive;
 }
-.wishContainer h1
+.wishContainer h2
 {
     margin-top:15px;
 }
 
-#friends h1
+#friends h2
 {
     margin-top:0px;
 }

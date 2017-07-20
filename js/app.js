@@ -6,7 +6,7 @@ $(".giftBtn").click(function(){
     typingEffect();
     setTimeout(function(){
         $(".popup").slideDown();
-    },800);
+    },8000);
     
 });
 

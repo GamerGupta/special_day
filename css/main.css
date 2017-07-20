@@ -210,6 +210,11 @@ p.caption
 {
     margin-top:15px;
 }
+
+#friends h1
+{
+    margin-top:0px;
+}
 .wishContainer img
 {
     height:80%;
